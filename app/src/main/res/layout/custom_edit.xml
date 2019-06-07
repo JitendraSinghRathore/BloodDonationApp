@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backpress"
+        android:layout_width="26dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/backne"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="1dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Edit Profile "
+        android:textAllCaps="false"
+        android:layout_marginLeft="140dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Blood Donation App</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_send_request">send_request</string>
+    <string name="title_activity_main__page">
+ <string name="action_reset">Reset</string>
+    <string name="no_selection">No Selection</string>
+    </string>
+    <string name="title_activity_my_req_activity">My_req_activity</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_edit_profile">Edit_profile</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="title_activity_poupotp">Poupotp</string>
+    <string name="title_activity_all_donor__click">AllDonor_Click</string>
+    <string name="title_activity_single__donor">Single_Donor</string>
+    <string name="title_activity_single_all__request">SingleAll_Request</string>
+    <integer name="slide_animation_duration">300</integer>
+
+    <string name="start_updates">START LOCATION UPDATES</string>
+    <string name="stop_updates">STOP LOCATION UPDATES</string>
+    <string name="get_last_location">GET LAST LOCATION</string>
+    <string name="title_activity_icon">icon</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCYvApJ6bLFLeZWaQPEucNAp2xhP6NEuPA</string>
+    <string name="title_activity_navigation__drawer">Navigation_Drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Blood Donations</string>
+    <string name="nav_header_subtitle">"Donate your blood for a reason,let the reason to be life"</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_rate__us">Rate_Us</string>
+    <string name="title_activity_feed_back">FeedBack</string>
+    <string name="title_activity_about__us">About_Us</string>
+</resources>

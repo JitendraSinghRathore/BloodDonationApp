@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+    <LinearLayout
+        android:background="#282727"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/splash"
+        android:layout_marginLeft="120dp"
+        />
+    <TextView
+        android:id="@+id/text0"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="300dp"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Although you do not know me,Your blood donation saved my life.Thank you for your support!"
+        />
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/text1"
+        android:textColor="#d91111"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO,THANKS"/>
+    <TextView
+        android:id="@+id/text2"
+        android:textColor="#d91111"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RATE NOW"/>
+
+</LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

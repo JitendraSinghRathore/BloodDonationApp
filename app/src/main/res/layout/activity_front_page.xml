@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    android:orientation="vertical"
+    tools:context=".Activity.FrontPageActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="4dp">
+
+
+        <ImageView
+            android:id="@+id/imagefront"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/splash"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textfront"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagefront"
+            android:gravity="center"
+            android:text="Donate Blood Today"
+            android:textColor="@color/rad"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/edittextfront"
+            app:layout_constraintTop_toBottomOf="@+id/imagefront"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textfront1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textfront"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:text="Please enter your mobile number"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textfront" />
+
+        <EditText
+            android:id="@+id/edittextid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sendotp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Mobile number"
+            android:inputType="phone"
+            android:maxLength="12"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/edittextfront"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sendotp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="false"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Mobile number"
+            android:inputType="phone"
+            android:maxLength="12"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textfront1" />
+
+
+        <Button
+            android:id="@+id/sendotp"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textfront1"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/rad"
+            android:text="Send OTP"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            app:layout_constraintEnd_toEndOf="@+id/textfront1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/textfront1"
+            app:layout_constraintTop_toBottomOf="@+id/textfront1" />
+
+
+        <TextView
+            android:id="@+id/textfront2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sendotp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="or use E-mail address insteand"
+            android:textColor="@color/rad"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/button1"
+            app:layout_constraintEnd_toEndOf="@+id/edittextfront"
+            app:layout_constraintStart_toStartOf="@+id/edittextfront"
+            app:layout_constraintTop_toBottomOf="@+id/edittextfront"
+            app:layout_constraintVertical_bias="0.037" />
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textfront2"
+            android:layout_alignParentRight="true"
+            android:background="@color/rad"
+            android:text="Vefiry"
+            android:textAllCaps="false"
+            android:textColor="#FFFF"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>

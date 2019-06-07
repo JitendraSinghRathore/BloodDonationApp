@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/map"
+        android:layout_marginStart="2dp"
+        android:gravity="center"
+        android:text="All Donor "
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="2dp" />
+
+
+    <TextView
+        android:id="@+id/nearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/map"
+        android:layout_marginEnd="60dp"
+        android:text="Near by"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="93dp" />
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/google"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:id="@+id/list"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="22dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/listwhite"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

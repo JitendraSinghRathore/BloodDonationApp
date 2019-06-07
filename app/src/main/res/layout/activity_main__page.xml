@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/rad"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main__page" />
+
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:id="@+id/views"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="98dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:ignore="NotSibling">
+    </android.support.v4.view.ViewPager>
+
+
+    <Button
+        android:id="@+id/sendrequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rad"
+        android:gravity="center"
+        android:layout_above="@id/tabs"
+        android:text="Request For Blood"
+        android:textAllCaps="false"
+        android:textColor="#FFF" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#FFFF"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabMode="fixed"
+        app:tabIndicatorHeight="4dp"
+        app:tabTextColor="@color/rad"
+        android:layout_alignParentLeft="true" />
+
+
+
+
+</RelativeLayout>

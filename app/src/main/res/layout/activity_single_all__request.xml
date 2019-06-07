@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.BloodRequestActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/rad"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="User Request"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_single_all__request" />
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/id_single_req"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:text="Blood Group"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="9dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textreq"
+            android:layout_width="wrap_content"
+            android:text="Blood Group"
+            android:textSize="16dp"
+            android:layout_marginTop="70dp"
+            android:textColor="#000"
+            android:layout_marginLeft="9dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textreq1"
+            android:layout_width="wrap_content"
+            android:text="No. of units"
+            android:textSize="16dp"
+            android:layout_marginTop="70dp"
+            android:textColor="#000"
+            android:layout_marginLeft="140dp"
+            android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/blood_single_req"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:textSize="15dp"
+            android:inputType="textCapWords"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginLeft="5dp"
+            android:hint="Select Blood Group"/>
+
+        <TextView
+            android:id="@+id/unit_single_req"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:textSize="15dp"
+            android:imeOptions="actionNext"
+            android:inputType="textCapWords"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="No. of units"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:text="Location"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="9dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/etlocation"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:inputType="textCapWords|textMultiLine"
+            android:maxLength="50"
+            android:maxLines="3"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/etlocation"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Hospital Locations/Address"/>
+
+        <TextView
+            android:id="@+id/personal"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="PERSONAL DETAILS"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_marginLeft="9dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/full"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Full Name"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="9dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/name_single_req"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:inputType="textCapWords"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Your Full Name"/>
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Mobile Number"
+            android:textSize="16dp"
+            android:textColor="#000"
+            android:layout_marginLeft="9dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/number_single_req"
+            android:layout_width="wrap_content"
+            android:textSize="15dp"
+            android:inputType="phone"
+            android:imeOptions="actionGo"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:backgroundTint="@android:color/transparent"
+            android:hint="Enter your moblie number"/>
+
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/send_request"
+        android:layout_width="360dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFF"
+        android:visibility="gone"
+        android:text="Request For Blood "
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@color/rad"
+        android:layout_height="45dp" />
+</RelativeLayout>
